@@ -16,7 +16,7 @@ export const App = () => {
     setActiveTab(tabId);
   };
 
-  const activeTab = tabs.find(t => t.id === activeTabId);
+  const activeTab = tabs.find(t => t.id === activeTabId) || tabs[0];
 
   return (
     <div className="section">
